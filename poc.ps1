@@ -104,7 +104,7 @@ $inttype
 write-host "############################################EMAILS###################################################" -ForegroundColor Gray
 
 $emails.value #| Sort-Object -Unique
-
+$emails.value | group | Sort-Object -Property Count -Descending
 
 write-host "############################################URLS###################################################" -ForegroundColor Gray
 
